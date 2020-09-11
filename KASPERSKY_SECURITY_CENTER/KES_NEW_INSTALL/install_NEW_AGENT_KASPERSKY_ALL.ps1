@@ -1,0 +1,12 @@
+﻿# INSTALLS KASPERSKY NETWORK AGENT AND KASPERSKY ENDPOINT SECURITY
+# ON COMPUTERS IN AN ACTIVE DIRECTORY FROM THE DOMAIN CONTROLLER
+# REMOTELY THROUGH THE UTILITY "PSEXEC"
+
+# USES INSTALL_KASPERSKY_NEW.bat FILE TO DO THE JOB
+
+$pcs = Get-ADComputer -filter *;
+$pcnames = $pcs.name;
+
+foreach ($pc in $pcnames) {
+    PsExec.exe -nobanner -accepteula \\"$pc$ -u DOMAIN\DOMAIN_ADMIN -p ADMIN_PASSWORD  -s -f -c -d install_NEW_AGENT_KASPERSKY.bat
+}
