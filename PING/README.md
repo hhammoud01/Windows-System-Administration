@@ -7,6 +7,6 @@ The output is logged to a file "PingResults.txt".
 
 INPUT FORMAT: NAME  - TYPE OF LINKE: IPADDRESS
 EXAMPLE INPUT:
-SITE1   - DSL: 10.0.0.1
-SITE1   - FIBRE: 10.0.0.2
+* SITE1   - DSL: 10.0.0.1
+* SITE1   - FIBRE: 10.0.0.2
 ....
