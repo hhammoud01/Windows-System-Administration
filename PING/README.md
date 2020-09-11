@@ -6,7 +6,7 @@ and tests connectivity to every site one by one.
 The output is logged to a file "PingResults.txt".
 
 INPUT FORMAT: NAME  - TYPE OF LINKE: IPADDRESS
-EXAMPLE INPUT:
-* SITE1   - DSL: 10.0.0.1
-* SITE1   - FIBRE: 10.0.0.2
+EXAMPLE INPUT:<br />
+SITE1   - DSL: 10.0.0.1<br />
+SITE1   - FIBRE: 10.0.0.2<br />
 ....
